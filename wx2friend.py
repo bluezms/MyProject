@@ -40,7 +40,7 @@ def send_news():
 
         # 你朋友的微信名称，不是备注，也不是微信帐号。
 
-        my_friend = bot.friends().search(u'明社')[0]
+        my_friend = bot.friends().search(u'tester')[0]
         my_friend.send(contents[0])
         my_friend.send(contents[1])
         my_friend.send(u"Have a good day!")
@@ -52,7 +52,7 @@ def send_news():
 
         # 你的微信名称，不是微信帐号。
 
-        my_friend = bot.friends().search('明社')[0]
+        my_friend = bot.friends().search('tester')[0]
         my_friend.send(u"今天消息发送失败了")
 
 if __name__ == "__main__":
